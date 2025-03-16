@@ -18,7 +18,7 @@ int main() {
     printf("Novo valor de numero após modificação pelo ponteiro: %d\n", numero);
 
     // Características específicas dos ponteiros
-    // Alocação dinâmica de memória com malloc
+    // Alocação dinâmica de memória com malloc GCC
     int *ponteiroDinamico;
     ponteiroDinamico = (int *) malloc(sizeof(int));
 
