@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug C/C++",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.exe", // Caminho para o executável
+      "args": [], // Argumentos de linha de comando, se necessário
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}", // Diretório atual
+      "environment": [],
+      "externalConsole": true, // Abre terminal externo para entrada/saída
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/mingw64/bin/gdb.exe", // Caminho para o GDB
+      "setupCommands": [
+        {
+          "description": "Habilita a formatação de impressão para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build" // Relacionado ao tasks.json para compilar antes de rodar
+    }
+  ]
+}
